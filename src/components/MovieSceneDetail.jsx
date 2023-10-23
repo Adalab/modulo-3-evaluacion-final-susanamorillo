@@ -13,7 +13,7 @@ const MovieSceneDetail = ({ movieOwen }) => {
   return (
     <>
       <article>
-        <img src={scene.poster} alt={`${scene.poster} poster`} />
+        <img className = "imgPreview"src={scene.poster} alt={`${scene.poster} poster`} />
         <h1>{scene.movie}</h1>
         <p>{scene.fullLine}</p>
         <p>Director: {scene.director}</p>

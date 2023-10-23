@@ -5,6 +5,7 @@ import callToApi from '../services/api';
 import MovieSceneList from './MovieSceneList';
 import Filters from './Filters';
 import MovieSceneDetail from './MovieSceneDetail';
+import '../styles/App.scss';
 
 let years;
 
@@ -63,7 +64,7 @@ const App = () => {
             path='/'
             element={
               <>
-                <section>
+                <section className='sectionFilters'>
                   <Filters
                     searchMovies={searchMovies.toString()} // Fix this line
                     handleChangeMovie={handleChangeMovie}
@@ -72,7 +73,7 @@ const App = () => {
                     years={getYears()}
                   />
                 </section>
-                <section>
+                <section className='sectionSceneList'>
                   <MovieSceneList
                     filterScenes={filterScenes}
                     searchMovies={searchMovies}

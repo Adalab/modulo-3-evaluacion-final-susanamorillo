@@ -1,4 +1,29 @@
-//para cada componente
+.form {
+  display: flex;
+  justify-content: center;
 
-//importa cada layout
-//@import '../styles/nombre-de-fichero.scss';
+  align-items: center;
+  height: 5rem;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  border-bottom: solid 0.1875rem #14d9c4;
+  padding-bottom: 0.3125rem;
+  margin-bottom: 1.25rem;
+}
+
+.sectionFilters {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.sectionSceneList {
+  text-align: center;
+}
