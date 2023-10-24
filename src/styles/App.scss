@@ -5,12 +5,13 @@
 .header {
   margin-top: 20px;
   margin-bottom: 30px;
-  height: 100px;
+  height: 200px;
   padding-top: 60px;
   text-align: center;
+  color: #591861;
+  font-size: 4rem;
   border-bottom: solid 0.1875rem purple;
   padding-bottom: 0.3125rem;
-  background-color: #56385a;
 }
 .listMovies {
   display: flex;
