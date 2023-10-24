@@ -1,5 +1,6 @@
 import { useLocation, matchPath } from 'react-router';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const MovieSceneDetail = ({ movieOwen }) => {
   const { pathname } = useLocation();
@@ -13,7 +14,11 @@ const MovieSceneDetail = ({ movieOwen }) => {
   return (
     <>
       <article>
-        <img className = "imgPreview"src={scene.poster} alt={`${scene.poster} poster`} />
+        <img
+          className='imgPreview'
+          src={scene.poster}
+          alt={`${scene.poster} poster`}
+        />
         <h1>{scene.movie}</h1>
         <p>{scene.fullLine}</p>
         <p>Director: {scene.director}</p>
@@ -24,5 +29,12 @@ const MovieSceneDetail = ({ movieOwen }) => {
       </article>
     </>
   );
+};
+MovieSceneDetail.propTypes = {
+  poster: PropTypes.string.isRequired,
+  movie: PropTypes.string.isRequired,
+  fullLine: PropTypes.string.isRequired,
+  director: PropTypes.string.isRequired,
+  audio: PropTypes.string.isRequired,
 };
 export default MovieSceneDetail;

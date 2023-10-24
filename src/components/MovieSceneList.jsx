@@ -15,7 +15,7 @@ const MovieSceneList = ({ filterScenes, searchMovies }) => {
   );
   const renderList = orderList.map((scene) => {
     return (
-      <Link key={scene.id} to={'/scene/' + scene.id} className='card-a'>
+      <Link key={scene.id} to={'/scene/' + scene.id} className='linkCard'>
         <li className='card' key={scene.id}>
           <MovieSceneItem scene={scene} />
         </li>
@@ -23,6 +23,6 @@ const MovieSceneList = ({ filterScenes, searchMovies }) => {
     );
   });
 
-  return <ul>{renderList}</ul>;
+  return <ul className='listMovies'>{renderList}</ul>;
 };
 export default MovieSceneList;
