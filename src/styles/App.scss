@@ -5,14 +5,15 @@
 .header {
   margin-top: 20px;
   margin-bottom: 30px;
-  height: 200px;
+  height: 100px;
   padding-top: 60px;
   text-align: center;
   color: #591861;
-  font-size: 4rem;
+  font-size: 3rem;
   border-bottom: solid 0.1875rem purple;
   padding-bottom: 0.3125rem;
 }
+
 .listMovies {
   display: flex;
   flex-wrap: wrap;
@@ -49,4 +50,20 @@
 .form {
   text-align: center;
   color: #3a3a3a;
+}
+.inputMovie {
+  border: 1px solid #591861;
+  margin-inline: 15px;
+  margin-right: 20px;
+}
+.inputYear {
+  border: 1px solid #591861;
+  margin-inline: 15px;
+}
+.detailContainer {
+  display: grid;
+  grid-template-columns: 1fr 1 fr;
+}
+.imgPreview {
+  height: 300px;
 }

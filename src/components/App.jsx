@@ -56,7 +56,7 @@ const App = () => {
   return (
     <>
       <header className='header'>
-        <h1>Owen Wilson's "WOW"</h1>
+        <h1 className='title'>Owen Wilson's "WOW"</h1>
       </header>
       <main className='main'>
         <Routes>

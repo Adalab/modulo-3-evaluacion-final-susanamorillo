@@ -12,7 +12,7 @@ const MovieSceneDetail = ({ movieOwen }) => {
   }
 
   return (
-    <>
+    <div className='detailContainer'>
       <article>
         <img
           className='imgPreview'
@@ -27,7 +27,7 @@ const MovieSceneDetail = ({ movieOwen }) => {
           Escucha aquí
         </Link>
       </article>
-    </>
+    </div>
   );
 };
 MovieSceneDetail.propTypes = {
